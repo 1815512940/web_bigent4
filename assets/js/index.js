@@ -1,6 +1,6 @@
 $(function () {
     // 1.获取用户信息
-    getUserInof()
+    getUserInfo()
 
     // 2.退出
     $('#btnLogout').on('click', function () {
@@ -16,7 +16,7 @@ $(function () {
 })
 
 // 获取用户信息
-function getUserInof() {
+function getUserInfo() {
     $.ajax({
         url: '/my/userinfo',
         success: function (res) {
